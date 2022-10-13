@@ -69,18 +69,30 @@
 \caption{Описание фактов, учтенных в анализе}
 \label{tab:factors-desc}\\
 \hline
-№ & \begin{tabular}[c]{@{}l@{}}Характеристика\\ объекта/явления\end{tabular} & \begin{tabular}[c]{@{}l@{}}Название\\ переменной\end{tabular} & \begin{tabular}[c]{@{}l@{}}Шкала\\ объяснения\end{tabular} & \begin{tabular}[c]{@{}l@{}}Роль:\\ целевая/\\ объясняющая\end{tabular} \\ \hline
+№ & \begin{tabular}[c]{@{}l@{}}Характеристика объекта/ \\ явления\end{tabular} & \begin{tabular}[c]{@{}l@{}}Название\\ переменной\end{tabular} & \begin{tabular}[c]{@{}l@{}}Шкала\\ объяснения\end{tabular} & \begin{tabular}[c]{@{}l@{}}Роль:\\ целевая/\\ объясняющая\end{tabular} \\ \hline
 \endfirsthead
 %
 \multicolumn{5}{c}%
 {{Tаблица \thetable\ --- продолжение}} \\
 \hline
-№ & \begin{tabular}[c]{@{}l@{}}Характеристика\\ объекта/явления\end{tabular} & \begin{tabular}[c]{@{}l@{}}Название\\ переменной\end{tabular} & \begin{tabular}[c]{@{}l@{}}Шкала\\ объяснения\end{tabular} & \begin{tabular}[c]{@{}l@{}}Роль:\\ целевая/\\ объясняющая\end{tabular} \\ \hline
+№ & \begin{tabular}[c]{@{}l@{}}Характеристика объекта/ \\ явления\end{tabular} & \begin{tabular}[c]{@{}l@{}}Название\\ переменной\end{tabular} & \begin{tabular}[c]{@{}l@{}}Шкала\\ объяснения\end{tabular} & \begin{tabular}[c]{@{}l@{}}Роль:\\ целевая/\\ объясняющая\end{tabular} \\ \hline
 \endhead
 %
-1 & Заработная плата & salary & 0--??? тыс. руб. & Целевая \\ \hline
-2 & Адрес места работы  & coordinates  & -90--90 ° $\varphi$, -180--180 ° $\lambda$ & Объясняющая \\ \hline
-3 &  &  &  &  \\ \hline
+1 & Заработная плата & salary\_from, salary\_to &  & Целевая \\ \hline
+2 & Адрес места работы  & coordinates  &  & Объясняющая \\ \hline
+3 & Сопроводительное письмо & response\_letter  &  &  \\ \hline
+4 & Город & city & & \\ \hline
+5 & Широта & longitude & & \\ \hline
+6 & Долгота & latitude  & & \\ \hline
+7 & Необработанный адрес & raw & & \\ \hline
+8 & Опыт & experience & & \\ \hline
+9 & Время работы & schedule, employment & & \\ \hline
+10 & Ключевые навыки & skills & & \\ \hline
+11 & Проверенный работодатель& has\_test & & \\ \hline
+12 & Заработная плата до вычета& gross & & \\ \hline
+13 & Валюта & currency & & \\ \hline
+14 & Премиум-аккаунт & premium & & \\ \hline
+
 \end{longtable}
 
 В анализе обязательно должно присутствовать не менее трех количественных и
@@ -326,3 +338,7 @@
 гипотез в различных сочетаниях, проверки прогностических способностей моделей и их
 диагностики.
 \end{document}
+
+% Local Variables:
+% TeX-engine: xetex
+% End:
